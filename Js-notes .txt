@@ -1,1 +1,33 @@
+/////////////////////////////////////////call back function ?
+
+ # Function that takes a callback as an argument
+
+ example:
+
+function add(a, b, callback) {
+  const sum = a + b;
+  callback(sum);
+}
+function logResult(result) {
+  console.log("The result is:", result);//8
+}
+  add(5, 3, logResult);
+
+  ////////////////////////////// map function
+
+  example:
+  // An array of numbers
+const numbers = [1, 2, 3, 4, 5];
+
+// A function to double a number
+function double(number) {
+  return number * 2;
+}
+
+// Using map to create a new array where each number is doubled
+const doubledNumbers = numbers.map(double);
+
+console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+
+
 
